@@ -1,0 +1,79 @@
+<local:MyCard Title="从此开始" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Text="祝你有美好的一天！！！" />
+                 </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="常用网站" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Title="Minecraft官网" Info="获取最新游戏资讯"
+                    EventType="打开网页" EventData="https://www.minecraft.net/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Title="Steam商店" Info="购买和管理游戏"
+                    EventType="打开网页" EventData="https://store.steampowered.com/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Title="Epic Games" Info="免费游戏领取"
+                    EventType="打开网页" EventData="https://www.epicgames.com/" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="游戏资源" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Theme="Blue" Text="材质包、模组和地图资源" />
+        <Grid Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35"
+                        Text="CurseForge" EventType="打开网页" EventData="https://www.curseforge.com/" />
+            <local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35"
+                        Text="Modrinth" EventType="打开网页" EventData="https://modrinth.com/" />
+        </Grid>
+        <local:MyImage Height="80" HorizontalAlignment="Center" Margin="0,15,0,0"
+                   Source="https://fastly.picsum.photos/id/965/200/200.jpg?hmac=OalaXaaPbpRZbMwF3uJMUdZIpUmyqse0anUnQcbStrM" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="食用教程" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Title="我的世界nbt管理" Info="教你如何玩坏nbt"
+                    EventType="打开网页" EventData="https://www.bilibili.com/video/BV18Z4y1y75J/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Title="我的世界的历史" Info="中字版哦"
+                    EventType="打开网页" EventData="https://www.bilibili.com/video/BV1Kxn2zyEE2/" Type="Clickable" />
+            </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="特别推荐" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Theme="Blue" Text="~随机图片~网站" />
+        <Grid Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35"
+                        Text="Picsum200p" EventType="打开网页" EventData="https://picsum.photos/200" />
+            <local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35"
+                        Text="Picsum200.300p" EventType="打开网页" EventData="https://picsum.photos/200/300" />
+        </Grid>
+        <local:MyImage Height="80" HorizontalAlignment="Center" Margin="0,15,0,0"
+                   Source="https://fastly.picsum.photos/id/657/200/200.jpg?hmac=6vrgINA0qije4LsZMVl1Rea_OtagocnfsCfETPr0_Hc" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="系统设置" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,10" Width="140" Height="35" ColorType="Red"
+                        Text="清理缓存" EventType="清理垃圾" ToolTip="清理游戏缓存文件" />
+            <local:MyButton Margin="0,0,10,10" Width="140" Height="35"
+                        Text="内存优化" EventType="内存优化" />
+        </StackPanel>
+        <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="关于" EventType="弹出窗口" EventData="关于|很高兴见到你(●'◡'●)&#xA;制作者：寒落落&#xA;制作于2025.10.24晚" />
+    </StackPanel>
+</local:MyCard>
